@@ -26,7 +26,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-6">
               <div className="w-16 h-16 relative flex items-center justify-center">
                 <Image 
-                  src="/logo.png" 
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} 
                   alt="The Lion Fitness 2.0 Logo" 
                   fill 
                   className="object-contain"

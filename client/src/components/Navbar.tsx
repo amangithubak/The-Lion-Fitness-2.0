@@ -38,7 +38,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-2 z-50 relative">
             <div className="w-14 h-14 md:w-16 md:h-16 relative flex items-center justify-center">
               <Image 
-                src="/logo.png" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} 
                 alt="The Lion Fitness 2.0 Logo" 
                 fill 
                 className="object-contain"
