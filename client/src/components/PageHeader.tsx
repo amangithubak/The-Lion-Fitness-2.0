@@ -8,7 +8,7 @@ interface PageHeaderProps {
   image?: string;
 }
 
-export function PageHeader({ title, description, image = "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" }: PageHeaderProps) {
+export function PageHeader({ title, description, image = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/banner.png` }: PageHeaderProps) {
   return (
     <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center overflow-hidden">
       <div 

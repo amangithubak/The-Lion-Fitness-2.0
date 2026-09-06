@@ -18,7 +18,7 @@ export function AboutSection() {
                 <div className="absolute inset-0 bg-gold/10 -translate-x-4 translate-y-4 border border-gold/20 z-0" />
                 <div className="absolute inset-0 z-10 overflow-hidden bg-card">
                   <Image
-                    src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/banner.png`}
                     alt="Gym interior"
                     fill
                     className="object-cover transition-transform duration-700 hover:scale-105"
