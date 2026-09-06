@@ -36,7 +36,7 @@ export function AboutSection() {
                 title={
                   <>
                     More than a gym.<br />
-                    <span className="text-gold">It's your battleground.</span>
+                    <span className="text-gold">It&apos;s your battleground.</span>
                   </>
                 }
                 description={gymInfo.description}
