@@ -251,6 +251,5 @@ export const galleryImages = [
 ];
 
 export const heroImages = [
-  "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop",
+  `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/banner.png`,
 ];
