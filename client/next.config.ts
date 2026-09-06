@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/The-Lion-Fitness-2.0",
+  basePath: isGithubActions ? "/The-Lion-Fitness-2.0" : "",
   images: {
     unoptimized: true,
     remotePatterns: [

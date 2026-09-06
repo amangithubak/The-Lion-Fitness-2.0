@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${oswald.variable} antialiased min-h-screen flex flex-col font-sans`}>
+      <body className={`${inter.variable} ${oswald.variable} antialiased min-h-screen flex flex-col font-sans`} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
